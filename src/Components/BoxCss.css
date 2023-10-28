@@ -1,0 +1,29 @@
+/* Default styles for smaller screens */
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-around;
+  }
+  
+  /* Media query for screens with a minimum width of 768px */
+  @media (min-width: 768px) {
+    .main {
+      flex-direction: column;
+    }
+  }
+  
+  /* Media query for screens with a minimum width of 1024px */
+  @media (min-width: 1024px) {
+    .main {
+      flex-direction: row;
+      
+    }
+  
+    /* Define specific styles for the boxes at this screen size */
+    .main > div {
+      width: 20%;
+      margin: 0;
+    }
+  }
+  
